@@ -1,0 +1,860 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+/* header */
+body{
+    background: black;
+}
+
+
+.playfair-display-body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: Zaptron;
+    src: url('Zaptron-Regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.header{
+    display: grid;
+    color:#daa520;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    background-color: rgb(158, 146, 151);
+    height: 95px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+
+}
+#logo{
+    width:103px;
+}
+.menuline:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:all .5s ease;
+    bottom: 0;
+    left: 0;
+
+}
+
+.menulist li{
+    list-style: none;
+    padding: 20px;
+}
+.menulist li a {
+    color: #daa520;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.menulist li a:hover{
+    color: white;
+}
+
+.menulist{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    height: 95px;
+}
+.headlogo {
+    margin-left: 52px;
+    align-items: center;
+    display: flex;
+    font-size: 38px;
+}
+.datetime{
+    display: flex;
+    font-size: 41px;
+    color:#b88746;
+    margin-top: 40px;
+
+}
+
+.datetime h5, .datetime p, .countdown span{
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #daa520;
+    word-spacing: 4px;
+}
+.count{
+    margin-right: 62px;
+    padding-top: 11px;
+
+}
+/* home */
+.homepara h2, .homepara h3{
+    
+    color: #b88746;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    /* margin: 0px; */
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 1), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% center;
+    }
+    
+    100% {
+        background-position: -200% center;
+    }
+}
+
+.homepage{
+   
+    height: 100vh;
+    padding: 117px 52px 0px;
+    background-image: url('img/hback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:5px ;
+    text-align: center;
+    
+    
+}
+
+.regbtn {
+    background-color: #daa520;
+    border: none;
+    padding: 15px 30px;
+    /* font-size: 18px; */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 31px;
+    margin-right: 367px;
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #261b09;
+    word-spacing: 4px;
+
+}
+.regtn ::before{
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,transparent,#daa520,transparent);
+    transform:translateX(-100%);
+    transition:0.6s;
+    position:absolute;
+
+}
+
+.regbtn:hover {
+    box-shadow: 0 0 20px 5px #f7c200;
+    background: transparent;
+    
+}
+
+/* Optional animation to make the glow pulse */
+/* @keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px #f7c200, 0 0 10px #f7c200;
+    }
+    50% {
+        box-shadow: 0 0 20px #f7c200, 0 0 30px #f7c200;
+    }
+    100% {
+        box-shadow: 0 0 5px #f7c200, 0 0 10px #f7c200;
+    }
+} */
+
+.regbtn:hover {
+    animation: glowing 1.5s infinite;
+}
+
+.title{
+    font-size: 77px;
+    font-weight: 400;   
+    margin-right: 359px; 
+    
+}
+
+
+.subtitle{
+    font-size: 32px;
+    margin-right: 367px;
+} 
+
+
+#timeLeft{
+    display:grid;
+}
+.countdown {
+    display: flex;
+}
+.countdown div span{
+    font-size: 29px;
+}
+.countdown div{
+
+    flex-basis: 100px;
+    margin: -2px;
+
+    padding: 8px;
+}
+.countdown div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+/* about */
+.abouthead{
+    text-align: center;
+    font-size: 57px;
+    color:#daa520;
+    padding-top: 78px;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+
+.aboutpage{
+
+    display: grid;
+    grid-auto-flow: column;
+    background-image: url('/img/home1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    
+}
+.aboutpara{
+    
+    font-size: 23px;
+    padding: 16px 20px 0px 40px;
+
+}
+.aboutpara p{
+    margin-top: 20px;
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #eccc97;
+    word-spacing: 4px;
+
+}
+.aboutimg img{
+    max-width: 726px;
+    max-height: 1061px;
+    height: 100%;
+    width: 100%;
+}
+  
+/* guidelines */
+ .guidlinepage{
+    padding: 52px;    
+    background-color:white;
+    background-image: url('/img/home1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.para{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 168px;
+    justify-content: center;
+
+}
+.guidlinepage h1{
+    font-size: 57px;
+    text-align: center;
+    color: #daa520;
+    margin-bottom: 20px;
+    padding-top: 44px;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+.paraleft {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+}
+.pararight{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+}
+.guid{
+    background-color: #fdd164;
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 10px;
+    height: 226px;
+
+}
+
+.style{
+    background: #daa520;
+    width: 172px;
+    border-bottom: 10px solid #fdd164;
+    border-top: 10px solid #fdd164;
+        border-radius: 10px;
+
+
+}
+
+.do{
+    position: absolute;
+    width: 64px;
+    height: 0px;
+    border-top: 112px solid transparent;
+    border-right: 116px solid #fdd164;
+    border-bottom: 112px solid transparent;
+}
+.line{
+    padding: 20px;
+}
+
+.guidlinepage img{
+    max-width: 396px;
+    margin-left: 492px;
+} 
+
+/* Domain */
+.domains{
+    display:grid;
+    grid-auto-flow: column;
+    margin-left: 52px;
+
+}
+.domain1 h2{
+    text-align: center;
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #e5d6d6;
+    word-spacing: 4px;
+}
+.domainpage h1{
+    font-size: 82px;
+    text-align: center;
+    padding: 83px 48px 48px;
+    color:#daa520;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+.domain1{
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 227px;
+    height: 346px;
+}
+.domainpage{
+    background-image: url('/img/homeright.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+    padding: 0px 10px;
+    height: 690px;
+    
+}
+
+.domains img{
+    width: 192px;
+    height: 220px;
+    margin: 18px;   
+}
+.problem-btn{
+    padding: 20px;
+    border: #daa520;
+    border-radius: 29px;
+    margin: 40px;
+    margin-left: 45%;
+    background-color: #daa520;
+    
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #261b09;
+    word-spacing: 4px;
+}
+/* prize */
+.prizepage{
+  
+    background-image: url('/img/home1.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.prizepage h1{
+    text-align: center;
+    padding: 83px 20px 20px;
+    font-size: 82px;
+    color:#daa520;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+.prizepage p{
+    text-align: center;
+    padding:20px;
+    font-size: 50px;
+    color:rgb(228, 96, 96);
+
+}
+.prizeimgs{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.prizeimgs img{
+    width: 192px;
+    height: 220px;
+    box-shadow: black;
+ 
+} 
+.prize1{
+    display: grid;
+    justify-content: center;
+}
+.prize2{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.prizethree, .prizetwo{
+    display: grid;
+}
+.prizethree img,.prizetwo img,.prize1 img{
+    justify-self: center;
+}
+/*timeline*/
+.timelinepage{
+    height: 618px;
+    padding: 46px 62px;
+    background-image: url('/img/homeright.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   
+
+}
+.timegrid{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+    
+}
+.timeup{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.timedown{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+
+}
+.timeup h2, p, .timedown h2,p{
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #e5d6d6;
+    word-spacing: 4px;
+}
+.timeup div{
+    width: 271px;
+    border-radius: 20px;
+    height: 239px;
+    background-color: #f7c200ef;
+    display: grid;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.timedown div{
+    width: 281px;
+    height: 239px;
+    border-radius: 20px;
+    background-color: #f7c200ef;
+    display: grid;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.timelinepage h1{
+    text-align: center;
+    font-size: 62px;
+    margin: 0px 0px 26px;
+    color:#daa520;
+    padding-top: 44px;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% center;
+    }
+    
+    100% {
+        background-position: -200% center;
+    }
+}
+
+.emptyline{
+    border: solid;
+    margin-left: 117px;
+    margin-right: 133px;
+    color:#daa520;
+
+}
+.dot1{
+    background-color: #db2626;
+    border: solid black;
+    width: 13px;
+    border-radius: 73px;
+    height: 13px;
+    position: absolute;
+    margin-top: 264px ;
+    margin-left:112px;
+}
+.dot2{
+    background-color: #db2626;
+    border: solid black;
+    width: 13px;
+    border-radius: 73px;
+    height: 13px;
+    position: absolute;
+    margin-top: 264px ;
+    margin-left: 342px;
+}
+.dot3{
+    background-color: #db2626;
+    border: solid black;
+    width: 13px;
+    border-radius: 73px;
+    height: 13px;
+    position: absolute;
+    margin-top: 264px ;
+    margin-left: 603px;
+}
+.dot4{
+    background-color: #db2626;
+    border: solid black;
+    width: 13px;
+    border-radius: 73px;
+    height: 13px;
+    position: absolute;
+    margin-top: 264px ;
+    margin-left: 844px;
+}
+.dot5{
+    background-color: #db2626;
+    border: solid black;
+    width: 13px;
+    border-radius: 73px;
+    height: 13px;
+    position: absolute;
+    margin-top: 264px ;
+    margin-left: 1086px;
+}
+.timegrid h2, .timegrid p{
+    text-align: center;
+    color: #daa520;
+    
+} 
+
+/* faqs */
+.faqpage {
+        padding: 0px 52px;
+        background-image: url('/img/homeright.jpg');
+        background-size: cover;
+        background-position: center;
+       
+
+}
+
+.faqpage h1 {
+    text-align: center;
+    margin-bottom: 38px;
+    color: #daa520;
+    font-size: 62px;
+    padding: 98px 20px 20px;
+    font-family: Zaptron;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px;
+    background: linear-gradient(45deg, rgba(255, 225, 230, 0.763), rgb(0, 0, 0), #daa520) 0% 0% / 200% text;
+    animation: 4s linear 0s infinite normal none running gradient;
+}
+
+
+
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 21px;
+    color: #daa520;
+    padding: 25px;
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #cfa326;
+    word-spacing: 4px;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 20px;
+    color: #555;
+    padding: 24px 15px;
+    background-color: #e1be61;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #7c5205;
+    word-spacing: 4px;
+}
+/* footer */
+.footerpage{
+    background-color: #83797a;
+    display:grid;
+    grid-auto-flow: column;
+    padding:30px
+
+}
+.flogo h2
+{
+    padding:0px;
+    margin-left: 52px;
+}
+/* Animation Keyframes
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+} */
+
+/* Adding Animation to Different Elements */
+
+/* Header Animation */
+.header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Home Page Text */
+.homepara, .title, .subtitle {
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Registration Button */
+.regbtn {
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s;
+}
+
+.regbtn:hover {
+    background-color: #9a4a75; /* Change color on hover */
+} */
+
+
+/* About Section */
+.aboutpage {
+    animation: fadeIn 2s ease-in;
+}
+
+.aboutpara {
+    animation: slideIn 2s ease-in;
+}
+
+/* Guidelines Section */
+.guid {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* .guidlinepage h1 {
+    animation: slideIn 2s ease-in;
+} */
+
+.guidlinepage .para {
+    animation: fadeIn 2s ease-out;
+}
+
+/* Domains Section */
+.domainpage {
+    animation: slideIn 2.5s ease-in-out;
+}
+
+.domain1 {
+    animation: pulse 3s infinite;
+}
+
+/* Prize Section */
+
+
+.prizeimgs img {
+    animation: pulse 4s infinite;
+    transition: transform 0.3s;
+}
+
+.prizeimgs img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.prizeimgs p{
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #e5d6d6;
+    word-spacing: 4px;
+}
+
+/* Timeline Section */
+/* .timelinepage h1 {
+    animation: fadeIn 2s ease-out;
+    
+} */
+
+.timeup div, .timedown div {
+    animation: slideIn 2.5s ease-out;
+}
+
+/* FAQ Section */
+.faq-item {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.faq-question {
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #64614a; /* Slight background change on hover */
+}
+
+/* Footer Section */
+.footerpage {
+    animation: fadeIn 2s ease-in;
+}
+.footerpage h2,p{
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #e5d6d6;
+    word-spacing: 4px;
+}
+/* Add general transitions for smooth effects */
+/* * {
+    transition: all 0.3s ease-in-out;
+} */
+.line h2 , p{
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #745a10;
+    word-spacing: 4px;
+
+}
