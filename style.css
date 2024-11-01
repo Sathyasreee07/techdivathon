@@ -519,7 +519,7 @@ body{
     justify-content: space-evenly;
 
 }
-.timeup h2, p, .timedown h2,p{
+.timeup h2, .timeup p, .timedown h2,.timedown p{
     font-family: "Acme", serif;
   font-weight: 200;
   font-style: normal;
@@ -779,7 +779,7 @@ body{
     animation: slideIn 2s ease-in;
 } */
 
-.guidlinepage .para {
+.guidlinepage, .para {
     animation: fadeIn 2s ease-out;
 }
 
@@ -839,7 +839,7 @@ body{
 .footerpage {
     animation: fadeIn 2s ease-in;
 }
-.footerpage h2,p{
+.footerpage h2,.footerpage p{
     font-family: "Acme", serif;
   font-weight: 200;
   font-style: normal;
@@ -850,11 +850,215 @@ body{
 /* * {
     transition: all 0.3s ease-in-out;
 } */
-.line h2 , p{
+.line h2 ,.line p{
     font-family: "Acme", serif;
   font-weight: 200;
   font-style: normal;
   color: #745a10;
     word-spacing: 4px;
 
+}
+@media only screen and (max-width: 600px){
+    .header{
+        height: 60px;
+    }
+    .headlogo {
+        margin-left: 10px;
+    }
+    #logo {
+        width: 67px;
+    }
+    .homepage {
+        height: unset;
+        padding: 40px 0px 0px;
+    }
+    .title{
+        font-size: 25px;
+        margin-right: 0px;
+    }
+    .subtitle{
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    .menulist{
+        grid-auto-flow: row;
+        display: none;
+    }
+    .regbtn{
+        font-size: 10px;
+        padding: 8px 10px;
+        margin-right: 0px;
+    }
+    .datetime{
+        display: unset;
+    }
+    .count{
+        margin-right: 0px;
+        padding-top: 21px;
+    }
+    .count h5, .count p{
+        font-size: 20px;
+    }
+    .countdown {
+        margin-top: 29px;
+        padding: 0px 47px;
+    }
+    .countdown div p {
+        font-size: 35px;
+    }
+    .countdown div span {
+        font-size: 18px;
+    }
+    .aboutpage{
+        height: unset;
+    }
+    .abouthead{
+        font-size: 40px;
+    }
+    .aboutpara p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .domainpage{
+        height: unset;
+    }
+    .domains {
+        grid-auto-flow: row;
+        gap: 29px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .domainpage h1{
+        font-size: 44px;
+    }
+    .domain1{
+        width: 216px;
+        height: 254px;
+    }
+    .domains img {
+        width: 180px;
+        height: 176px;
+    }
+    .domain1 h2 {
+        font-size: 17px;
+    }
+    .problem-btn{
+        display: grid;
+        justify-self: center;
+        margin: 40px 0px 0px;
+    
+    }
+    .guidlinepage h1 {
+        font-size: 44px;
+        padding-bottom: 27px;
+    }
+    .guidlinepage{
+        height: unset;
+    }
+    .para {
+        grid-auto-flow: row;
+        gap: 45px;
+    }
+    .line h2,.line p{
+        font-size:11px;
+    }
+    .paraleft{
+        gap: 45px;
+    }
+    .faqpage h1{
+        font-size: 23px;
+        padding: 98px 20px 33px;
+    }
+    .guid{
+        height: 204px;
+    }
+    .style {
+        width: 148px;
+        height: 183px;
+    }
+    .do {
+    width: 47px;
+    border-top: 101px solid transparent;
+    border-right: 117px solid #fdd164;
+    border-bottom: 101px solid transparent;
+    }
+    .timelinepage{
+        height: unset;
+    }
+    .timelinepage h1 {
+        font-size: 44px;
+        padding-bottom: 18px;
+    }
+    .timegrid { 
+        grid-template-columns: 45% 10% 45%;
+        gap: 21px;
+    }
+    .timeup {
+        grid-auto-flow: row;
+        gap: 100px;
+    }
+    .timedown{
+        grid-auto-flow: row;
+        align-items: center;
+    }
+    .timeup div , .timedown div{
+        width: 134px;
+        height: 134px;
+    }
+    .dot1 {
+        margin-top: 62px;
+        margin-left: 161px;
+    }
+
+    .dot2{
+        margin-top: 173px;
+        margin-left: 161px;
+    }
+    .dot3{
+        margin-top: 289px;
+        margin-left: 161px;
+    }
+    .dot4{
+        margin-top: 423px;
+        margin-left: 161px;
+    }
+    .dot5{
+        margin-top: 530px;
+        margin-left: 161px;
+    }
+    .emptyline {
+        margin-left: 0px; 
+        margin-right: 0px;
+        margin-top: 64px;
+        margin-bottom: 60px;
+        width: 0px;
+        display: flex;
+        justify-self: center;
+    }
+    .regend{
+        margin-top: 47px;
+    }
+    .ideaselection{
+        margin-bottom: 47px;
+    }
+    .prizepage h1{
+        font-size: 44px;
+    }
+    .prizeimgs img {
+        width: 136px;
+        height: 128px;
+    }
+    .prizepage p{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .prize2{
+        padding-top: 30px;
+    }
+    .faq-question {
+        padding: 11px;
+    }
+    
 }
