@@ -799,6 +799,9 @@ body{
 .domain1 {
     animation: pulse 3s infinite;
 }
+#backbtn,#nextbtn{
+    display: none;
+}
 
 /* Prize Section */
 
@@ -971,10 +974,10 @@ body{
         height: unset;
     }
     .domains {
-        grid-auto-flow: row;
+        overflow-x: scroll;
         gap: 29px;
-        justify-content: center;
-        margin-left: 0px;
+      
+        margin-left: 13px;
     }
     .domainpage h1{
         font-size: 44px;
@@ -1183,6 +1186,19 @@ body{
         color: #3a2a01;
         
     }
+    #backbtn,#nextbtn{
+        display: block;
+        width: 50PX;
+        cursor: pointer;
+        
+    }
+    .boxs-wrap{
+        display: flex;
+        align-items: center;
+        margin: 50px 0px;
+    }
+
+
 }
     
 

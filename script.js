@@ -62,9 +62,20 @@ var x=setInterval(function(){
   document.getElementById("minutes").innerHTML=minutes;
   document.getElementById("seconds").innerHTML=seconds;
 },1000);
+let scrollContainer=document.querySelector(".domains");
+        let backbtn=document.getElementById("backbtn");
+        let nextbtn=document.getElementById("nextbtn");
+        scrollContainer.addEventListener("wheel",(evt)=>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft+=evt.deltaY;
+        });
+        nextbtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior="smooth";
+            scrollContainer.scrollLeft+=250;
+        });
+        backbtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior="smooth";
+            scrollContainer.scrollLeft-=250;
+        });
 
 
-
-function toggleMenu() {
-    document.getElementById("myTopnav").classList.toggle("active");
-}
