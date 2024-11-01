@@ -710,10 +710,10 @@ body{
 }
 /* footer */
 .footerpage{
-    background-color: #83797a;
-    display:grid;
+    background-color: #0f0f0f;
+    display: grid;
     grid-auto-flow: column;
-    padding:30px
+    padding: 92px 250px
 
 }
 .flogo h2
@@ -858,6 +858,45 @@ body{
     word-spacing: 4px;
 
 }
+#flogo{
+    width: 229px;
+    padding-left: 83px;
+}
+.icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons img{
+    width: 78px;
+    height: 78px;
+    
+}
+
+.flogo{
+    display: grid;
+    grid-auto-flow: column;
+}
+.cdet{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    padding-top: 11px;
+    font-size: 25px;
+}
+.footerpage h2{
+    font-size:40px;
+    color: #cfa326;
+    margin-top: -58px;
+}
+.contact p{
+    color:#8a6806;
+}
+.contact{
+    padding-left: 236px;
+    padding-top: 47px;
+}
 @media only screen and (max-width: 600px){
     .header{
         height: 60px;
@@ -961,7 +1000,7 @@ body{
         gap: 45px;
     }
     .line h2,.line p{
-        font-size:11px;
+        font-size:12px;
     }
     .paraleft{
         gap: 45px;
@@ -978,13 +1017,18 @@ body{
         height: 180px;
     }
     .do {
-        width: 18px;
+        width: 9px;
         border-top: 111px solid transparent;
         border-right: 103px solid #fdd164;
         border-bottom: 86px solid transparent;
     }
+    .line{
+        padding: 9px;
+    }
     .timelinepage{
         height: unset;
+        height: unset;
+        padding: 0px 28px;
     }
     .timelinepage h1 {
         font-size: 44px;
@@ -1060,5 +1104,40 @@ body{
     .faq-question {
         padding: 11px;
     }
-    
+
+    .flogo{
+        grid-auto-flow: row;
+        gap: 20px;
+    }
+    .flogo h2{
+        margin-left: 0px;
+    }
+    #flogo {
+        width: 52px;
+        padding-left: 0px;
+    }
+    .icons{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: start;
+        gap: 3px;
+    }
+    .icons img {
+        width: 21px;
+        height: 21px;
+    }
+    .footerpage h2 {
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    .footerpage {
+        padding: 10px 20px;
+    }
+    .contact {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .cdet{
+        font-size: 10px;
+    }
 }
