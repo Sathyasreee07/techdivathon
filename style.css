@@ -974,14 +974,14 @@ body{
         height: 204px;
     }
     .style {
-        width: 148px;
-        height: 183px;
+        width: 103px;
+        height: 180px;
     }
     .do {
-    width: 47px;
-    border-top: 101px solid transparent;
-    border-right: 117px solid #fdd164;
-    border-bottom: 101px solid transparent;
+        width: 18px;
+        border-top: 111px solid transparent;
+        border-right: 103px solid #fdd164;
+        border-bottom: 86px solid transparent;
     }
     .timelinepage{
         height: unset;
@@ -991,7 +991,7 @@ body{
         padding-bottom: 18px;
     }
     .timegrid { 
-        grid-template-columns: 45% 10% 45%;
+        grid-auto-flow: column;
         gap: 21px;
     }
     .timeup {
@@ -1008,24 +1008,24 @@ body{
     }
     .dot1 {
         margin-top: 62px;
-        margin-left: 161px;
+        margin-left: 151px;
     }
 
     .dot2{
         margin-top: 173px;
-        margin-left: 161px;
+        margin-left: 151px;
     }
     .dot3{
-        margin-top: 289px;
-        margin-left: 161px;
+        margin-top: 295px;
+        margin-left: 151px;
     }
     .dot4{
-        margin-top: 423px;
-        margin-left: 161px;
+        margin-top: 416px;
+        margin-left: 151px;
     }
     .dot5{
         margin-top: 530px;
-        margin-left: 161px;
+        margin-left: 151px;
     }
     .emptyline {
         margin-left: 0px; 
