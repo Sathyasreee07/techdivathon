@@ -42,6 +42,13 @@ body{
 #logo{
     width:103px;
 }
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #daa520;
+    padding: 20px;
+}
 .menuline:before{
     content: "";
     position: absolute;
@@ -719,7 +726,8 @@ body{
 .flogo h2
 {
     padding:0px;
-    margin-left: 52px;
+    margin-left: -5px;
+    font-size: 20px;
 }
 /* Animation Keyframes
 @keyframes fadeIn {
@@ -860,7 +868,7 @@ body{
 }
 #flogo{
     width: 229px;
-    padding-left: 83px;
+    /* padding-left: 83px; */
 }
 .icons {
     display: grid;
@@ -886,7 +894,7 @@ body{
     font-size: 25px;
 }
 .footerpage h2{
-    font-size:40px;
+    font-size:34px;
     color: #cfa326;
     margin-top: -58px;
 }
@@ -894,7 +902,7 @@ body{
     color:#8a6806;
 }
 .contact{
-    padding-left: 236px;
+    padding-left: 180px;
     padding-top: 47px;
 }
 @media only screen and (max-width: 600px){
@@ -1140,4 +1148,42 @@ body{
     .cdet{
         font-size: 10px;
     }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+            align-items: center;
+        padding-right: 20px;
+    }
+        
+    .menulist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 61px;
+        right: 0;
+        height: 300px;
+        background-color: #eab725
+        
+    }
+    .menulist.active {
+        display: flex;
+    }
+    .menulist li {
+        text-align: center;
+        padding: 11px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .hamburger {
+        display: block;
+        padding: 13px;
+    }    
+    .menulist li a {
+        font-size: 16px;
+        color: #3a2a01;
+        
+    }
 }
+    
+
+ 

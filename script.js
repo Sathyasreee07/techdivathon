@@ -63,3 +63,8 @@ var x=setInterval(function(){
   document.getElementById("seconds").innerHTML=seconds;
 },1000);
 
+
+
+function toggleMenu() {
+    document.getElementById("myTopnav").classList.toggle("active");
+}
