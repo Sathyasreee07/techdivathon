@@ -688,16 +688,15 @@ body{
     font-size: 21px;
     color: #daa520;
     padding: 25px;
-    /* background-color: #f0f0f0; */
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    background: rgba(255, 255, 255, 0.2); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
     backdrop-filter: blur(10px); /* Blur effect */
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: "Acme", serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #cfa326;
+    font-weight: 200;
+    font-style: normal;
+    color: #cfa326;
     word-spacing: 4px;
 }
 
@@ -710,9 +709,9 @@ body{
     border-radius: 5px;
     margin-top: 5px;
     font-family: "Acme", serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #7c5205;
+    font-weight: 200;
+    font-style: normal;
+    color: #7c5205;
     word-spacing: 4px;
 }
 /* footer */
@@ -729,26 +728,7 @@ body{
     margin-left: -5px;
     font-size: 20px;
 }
-/* Animation Keyframes
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
-@keyframes slideIn {
-    0% { transform: translateY(100px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-} */
-
-/* Adding Animation to Different Elements */
-
-/* Header Animation */
 .header {
     animation: fadeIn 1s ease-in-out;
 }
@@ -757,15 +737,13 @@ body{
 .homepara, .title, .subtitle {
     animation: slideIn 1.5s ease-out;
 }
-
-/* Registration Button */
 .regbtn {
     animation: pulse 2s infinite;
     transition: background-color 0.3s;
 }
 
 .regbtn:hover {
-    background-color: #9a4a75; /* Change color on hover */
+    background-color: #ab8915; 
 } */
 
 
@@ -878,10 +856,12 @@ body{
     grid-auto-flow: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-left: 46px;
 }
 .icons img{
-    width: 78px;
-    height: 78px;
+    width: 66px;
+    height: 66px;
+    padding: 5px;
     
 }
 
@@ -1132,6 +1112,7 @@ body{
         grid-auto-flow: column;
         justify-content: start;
         gap: 3px;
+        
     }
     .icons img {
         width: 21px;

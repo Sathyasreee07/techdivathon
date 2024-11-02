@@ -79,3 +79,6 @@ let scrollContainer=document.querySelector(".domains");
         });
 
 
+function toggleMenu() {
+  document.getElementById("myTopnav").classList.toggle("active");
+}
