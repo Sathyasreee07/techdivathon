@@ -374,7 +374,17 @@ body{
     display:grid;
     grid-auto-flow: column;
     margin-left: 52px;
-
+    overflow-x: scroll;
+    gap: 29px;
+    margin-left: 13px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.domains::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Edge, and Safari */
+}
+.domain1, a{
+    text-decoration: none;
 }
 .domain1 h2{
     text-align: center;
@@ -408,7 +418,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 227px;
     height: 346px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
 }
+
 .domainpage{
     background-image: url('/img/homeright.jpg');
      background-size: cover;
@@ -418,12 +431,28 @@ body{
     height: 690px;
     
 }
+.domain1{
+    position: relative;
+    border-radius: 4px;
+    background: rgba(61, 53, 53, 0.2); /* Semi-transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 227px;
+    height: 346px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    
+  }
 
 .domains img{
     width: 192px;
     height: 220px;
     margin: 18px;   
 }
+
+
+
 .problem-btn{
     padding: 20px;
     border: #daa520;
@@ -778,9 +807,16 @@ body{
     animation: pulse 3s infinite;
 }
 #backbtn,#nextbtn{
-    display: none;
+    display: block;
+    width: 50PX;
+    cursor: pointer;
+    
 }
-
+.boxs-wrap {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
 /* Prize Section */
 
 
@@ -1173,7 +1209,8 @@ body{
         cursor: pointer;
         
     }
-    .boxs-wrap{
+    
+    .boxs-wrap {
         display: flex;
         align-items: center;
         margin: 50px 0px;

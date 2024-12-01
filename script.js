@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // // Update countdown every 1 second
 // setInterval(updateCountdown, 1000);
-var countDownDate = new Date("Jan 30,2025 00:00:00:00").getTime();
+var countDownDate = new Date("Feb 3,2025 00:00:00:00").getTime();
 var x=setInterval(function(){
   var now = new Date().getTime();
   var distance = countDownDate-now;
