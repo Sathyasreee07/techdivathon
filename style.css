@@ -146,8 +146,24 @@ body{
     
     
 }
-
-.regbtn {
+.theback button{
+    background-color: #daa520;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: "Acme", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #261b09;
+    word-spacing: 4px;
+}
+.regbtn  {
     background-color: #daa520;
     border: none;
     padding: 15px 30px;
@@ -181,7 +197,7 @@ body{
 
 }
 
-.regbtn:hover {
+.regbtn:hover ,.theback button:hover {
     box-shadow: 0 0 20px 5px #f7c200;
     background: transparent;
     
@@ -451,6 +467,108 @@ body{
     height: 220px;
     margin: 18px;   
 }
+
+.thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 227px;
+    height: 346px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    /* box-shadow: rgb(255 0 0) 0px 4px 20px 0px; */
+}
+
+
+
+  
+  
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    /* background: #b63838; */
+    color: #000;
+   
+    border-radius: 4px;
+    background: rgba(61, 53, 53, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .thefront h2{
+    text-align: center;
+    font-family: "Acme", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #e5d6d6;
+    word-spacing: 4px;
+  }
+  
+ /* .theback button{
+    padding:10px;
+    margin:10px;
+    background-color: #8a6806;
+    border-radius: 4px;
+    border-color: #8a6806;
+ } */
+.theback a{
+    color: #2d2102;
+    text-decoration: none;
+
+}
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    /* background: #ff6565; */
+    border-radius: 4px;
+    background: rgba(61, 53, 53, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+    align-content: center;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  
+ 
+  .thefront h1, .theback h1{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .thefront p, .theback p{   
+
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
 
 
 
@@ -776,7 +894,7 @@ body{
     color: #2d2102;
 }
 
-.regbtn:hover {
+.regbtn:hover ,.theback button:hover{
     background-color: #ab8915; 
 } */
 
