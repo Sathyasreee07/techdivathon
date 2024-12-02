@@ -383,8 +383,9 @@ body{
 .domains::-webkit-scrollbar {
     display: none; /* Hide scrollbar in Chrome, Edge, and Safari */
 }
-.domain1, a{
+.domain1 a{
     text-decoration: none;
+    color: #2d2102;
 }
 .domain1 h2{
     text-align: center;
@@ -769,6 +770,10 @@ body{
 .regbtn {
     animation: pulse 2s infinite;
     transition: background-color 0.3s;
+}
+.regbtn a{
+    text-decoration: none;
+    color: #2d2102;
 }
 
 .regbtn:hover {
