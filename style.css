@@ -1022,28 +1022,25 @@ body{
 
 }
 #flogo{
-    width: 128px;
+    width: 144px;
     
     /* padding-left: 83px; */
 }
 .icons {
-    display: grid;
-        grid-auto-flow: column;
-        align-items: center;
+    display: flex;
+        /* grid-auto-flow: column;
+        align-items: center; */
 }
 .icons img{
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     padding: 5px;
     
 }
- .icons a{
-        width: 22px;
-    }
 
 .cdet img{
-    width: 66px;
-    height: 66px;
+    width: 32px;
+    height: 32px;
     padding: 5px;
 }
 
@@ -1051,15 +1048,23 @@ body{
     display: grid;
     grid-auto-flow: row;
 }
+/* .flogo div{
+        padding-top: 47px;
+        padding-left: 35px;
+} */
+ .foot{
+    padding-top: 47px;
+    padding-left: 10px;
+ }
 .cdet{
     display: grid;
-    grid-auto-flow: row;
+    grid-template-columns: 7% 93%;
     gap: 10px;
     padding-top: 11px;
     font-size: 25px;
 }
 .footerpage h2{
-    font-size:20px;
+    font-size:22px;
     color: #cfa326;
     margin-top: -14px;
 }
@@ -1069,6 +1074,9 @@ body{
 .contact{
     padding-left: 180px;
     padding-top: 47px;
+}
+.contact h2{
+    font-size: 40px;
 }
 @media only screen and (max-width: 600px){
     .header{
@@ -1289,6 +1297,7 @@ body{
         width: 52px;
         padding-left: 0px;
     }
+    
     .icons{
         display: grid;
         grid-auto-flow: column;
