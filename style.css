@@ -94,7 +94,7 @@ body{
     font-size: 41px;
     color:#b88746;
     margin-top: 40px;
-
+    padding-left: 109px;
 }
 
 .datetime h5, .datetime p, .countdown span{
@@ -134,18 +134,33 @@ body{
     }
 }
 
-.homepage{
-   
-    height: 100vh;
-    padding: 117px 52px 0px;
-    background-image: url('img/hback.jpg');
+.homepage{ 
+    height: 80vh;
+    padding: 80px 52px 0px;
+    background-image: url(img/hback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:5px ;
-    text-align: center;
-    
-    
+    background-position-y: 5px;
+    text-align: center;  
 }
+/* collage name */
+.clg img{
+    width:99px;
+}
+.clg h1{
+    color: #daa520;
+    font-size: 39px;
+    align-content: center;
+    padding-right: 119px;
+    font-family: Zaptron;
+}
+.clg{
+    display: grid;
+    grid-auto-flow: column;
+    margin-right: 270px;
+    margin-left: 49px;
+}
+
 .theback button{
     background-color: #daa520;
     border: none;
@@ -276,7 +291,7 @@ body{
 
     display: grid;
     grid-auto-flow: column;
-    background-image: url('/img/home1.jpg');
+    background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -297,6 +312,8 @@ body{
   font-style: normal;
   color: #eccc97;
     word-spacing: 4px;
+    display: flex;
+    justify-content: space-between;
 
 }
 .aboutimg img{
@@ -310,7 +327,7 @@ body{
  .guidlinepage{
     padding: 52px;    
     background-color:white;
-    background-image: url('/img/home1.jpg');
+    background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -440,7 +457,7 @@ body{
 }
 
 .domainpage{
-    background-image: url('/img/homeright.jpg');
+    background-image: url('img/homeright.jpg');
      background-size: cover;
      background-position: center;
      height: 100vh;
@@ -591,7 +608,7 @@ body{
 /* prize */
 .prizepage{
   
-    background-image: url('/img/home1.jpg');
+    background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
    
@@ -650,7 +667,7 @@ body{
 .timelinepage{
     height: 618px;
     padding: 46px 62px;
-    background-image: url('/img/homeright.jpg');
+    background-image: url('img/homeright.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -758,7 +775,7 @@ body{
     height: 13px;
     position: absolute;
     margin-top: 264px ;
-    margin-left: 342px;
+    margin-left: 403px;
 }
 .dot3{
     background-color: #db2626;
@@ -768,7 +785,7 @@ body{
     height: 13px;
     position: absolute;
     margin-top: 264px ;
-    margin-left: 603px;
+    margin-left: 684px;
 }
 .dot4{
     background-color: #db2626;
@@ -778,7 +795,7 @@ body{
     height: 13px;
     position: absolute;
     margin-top: 264px ;
-    margin-left: 844px;
+    margin-left: 963px;
 }
 .dot5{
     background-color: #db2626;
@@ -788,7 +805,7 @@ body{
     height: 13px;
     position: absolute;
     margin-top: 264px ;
-    margin-left: 1086px;
+    margin-left: 1244px;
 }
 .timegrid h2, .timegrid p{
     text-align: center;
@@ -799,11 +816,9 @@ body{
 /* faqs */
 .faqpage {
         padding: 0px 52px;
-        background-image: url('/img/homeright.jpg');
+        background-image: url('img/homeright.jpg');
         background-size: cover;
-        background-position: center;
-       
-
+        background-position: center;   
 }
 
 .faqpage h1 {
@@ -867,7 +882,7 @@ body{
     background-color: #0f0f0f;
     display: grid;
     grid-auto-flow: column;
-    padding: 92px 250px
+    padding: 92px 250px;
 
 }
 .flogo h2
@@ -1008,25 +1023,33 @@ body{
 }
 #flogo{
     width: 128px;
+    
     /* padding-left: 83px; */
 }
 .icons {
     display: grid;
-    grid-auto-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 151px;
+        grid-auto-flow: column;
+        align-items: center;
 }
 .icons img{
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    
+}
+ .icons a{
+        width: 22px;
+    }
+
+.cdet img{
     width: 66px;
     height: 66px;
     padding: 5px;
-    
 }
 
 .flogo{
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
 }
 .cdet{
     display: grid;
@@ -1036,7 +1059,7 @@ body{
     font-size: 25px;
 }
 .footerpage h2{
-    font-size:18px;
+    font-size:20px;
     color: #cfa326;
     margin-top: -14px;
 }
@@ -1269,14 +1292,16 @@ body{
     .icons{
         display: grid;
         grid-auto-flow: column;
-        justify-content: start;
-        gap: 3px;
-        
+        align-items: center;
+    
     }
     .icons img {
-        width: 21px;
-        height: 21px;
+            width: 42px;
+            height: 42px;
+            padding: 5px;
     }
+
+   
     .footerpage h2 {
         font-size: 11px;
         margin-top: 0px;
