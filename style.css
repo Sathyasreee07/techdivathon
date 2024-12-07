@@ -15,6 +15,7 @@ body{
   font-style: normal;
 }
 
+
 @font-face {
     font-family: Zaptron;
     src: url('Zaptron-Regular.otf') format('truetype');
@@ -90,22 +91,26 @@ body{
     font-size: 38px;
 }
 .datetime{
-    display: flex;
     font-size: 41px;
-    color:#b88746;
+    color: #b88746;
     margin-top: 40px;
-    padding-left: 109px;
+    padding: 21px;
+    border: solid;
+    margin-left: 235px;
+    width: 541px;
+    border-radius: 27px;
+    
 }
 
 .datetime h5, .datetime p, .countdown span{
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #daa520;
     word-spacing: 4px;
 }
 .count{
-    margin-right: 62px;
+    
     padding-top: 11px;
 
 }
@@ -172,68 +177,51 @@ body{
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #261b09;
     word-spacing: 4px;
-}
-.regbtn  {
-    background-color: #daa520;
-    border: none;
-    padding: 15px 30px;
-    /* font-size: 18px; */
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: box-shadow 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    margin-top: 31px;
-    margin-right: 367px;
-    font-family: "Acme", serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #261b09;
-    word-spacing: 4px;
-
-}
-.regtn ::before{
-    content: "";
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg,transparent,#daa520,transparent);
-    transform:translateX(-100%);
-    transition:0.6s;
-    position:absolute;
-
+    margin: 0px 42px;
 }
 
-.regbtn:hover ,.theback button:hover {
-    box-shadow: 0 0 20px 5px #f7c200;
+
+
+
+.regbtn {
+  background-color: #daa520;
+  border-radius: 100px;
+  box-shadow: rgb(187 179 44 / 20%) 0 -25px 18px -14px inset, rgb(185 187 44 / 15%) 0 1px 2px, rgb(187 184 44 / 15%) 0 2px 4px, rgb(187 173 44 / 15%) 0 4px 8px, rgb(187 173 44 / 15%) 0 8px 16px, rgb(185 187 44 / 15%) 0 16px 32px;
+  color: rgb(128, 109, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding:9px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 17px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 31px;
+  margin-right: 367px;
+}
+
+.regbtn:hover {
+  box-shadow: rgba(187, 182, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 182, 44, 0.25) 0 1px 2px,rgba(187, 182, 44, 0.25) 0 2px 4px,rgba(182, 187, 44, 0.25) 0 4px 8px,rgba(187, 187, 44, 0.25) 0 8px 16px,rgba(187, 182, 44, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+.theback button:hover {
+    box-shadow: 0 0 20px 5px #e7bc21;
     background: transparent;
+    background-color: #dabb55; 
     
 }
 
-/* Optional animation to make the glow pulse */
-/* @keyframes glowing {
-    0% {
-        box-shadow: 0 0 5px #f7c200, 0 0 10px #f7c200;
-    }
-    50% {
-        box-shadow: 0 0 20px #f7c200, 0 0 30px #f7c200;
-    }
-    100% {
-        box-shadow: 0 0 5px #f7c200, 0 0 10px #f7c200;
-    }
-} */
-
-.regbtn:hover {
-    animation: glowing 1.5s infinite;
-}
 
 .title{
     font-size: 77px;
@@ -253,20 +241,26 @@ body{
     display:grid;
 }
 .countdown {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
 }
 .countdown div span{
-    font-size: 29px;
+    font-size: 17px;
 }
 .countdown div{
 
     flex-basis: 100px;
+    width: 101px;
     margin: -2px;
-
     padding: 8px;
+    border: solid;
+    border-radius: 60px;
 }
 .countdown div p{
-    font-size: 60px;
+        font-size: 51px;
     margin-bottom: -14px;
 }
 /* about */
@@ -302,12 +296,14 @@ body{
 .aboutpara{
     
     font-size: 23px;
-    padding: 16px 20px 0px 40px;
+    padding: 16px 183px 0px;
+    text-align: justify;
 
 }
 .aboutpara p{
     margin-top: 20px;
-    font-family: "Acme", serif;
+    font-family: math;
+
   font-weight: 200;
   font-style: normal;
   color: #eccc97;
@@ -422,7 +418,7 @@ body{
 }
 .domain1 h2{
     text-align: center;
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #e5d6d6;
@@ -526,7 +522,7 @@ body{
   }
   .thefront h2{
     text-align: center;
-    font-family: "Acme", serif;
+    font-family: math;
     font-weight: 200;
     font-style: normal;
     color: #e5d6d6;
@@ -568,7 +564,10 @@ body{
     gap: 15px;
     justify-content: center;
   }
-  
+  .theback p{
+    color: #cfa326;
+    padding: 10px;
+  }
   
  
   .thefront h1, .theback h1{
@@ -599,7 +598,7 @@ body{
     
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #261b09;
@@ -692,7 +691,7 @@ body{
 
 }
 .timeup h2, .timeup p, .timedown h2,.timedown p{
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #e5d6d6;
@@ -740,6 +739,8 @@ body{
     animation: 4s linear 0s infinite normal none running gradient;
 
 }
+
+
 @keyframes gradient{
     0% {
         background-position: 0% center;
@@ -856,7 +857,7 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
     backdrop-filter: blur(10px); /* Blur effect */
     border: 1px solid rgba(255, 255, 255, 0.3);
-    font-family: "Acme", serif;
+    font-family:math;
     font-weight: 200;
     font-style: normal;
     color: #cfa326;
@@ -871,7 +872,7 @@ body{
     background-color: #e1be61;
     border-radius: 5px;
     margin-top: 5px;
-    font-family: "Acme", serif;
+    font-family: math;
     font-weight: 200;
     font-style: normal;
     color: #7c5205;
@@ -900,18 +901,14 @@ body{
 .homepara, .title, .subtitle {
     animation: slideIn 1.5s ease-out;
 }
-.regbtn {
-    animation: pulse 2s infinite;
-    transition: background-color 0.3s;
-}
+
 .regbtn a{
     text-decoration: none;
     color: #2d2102;
 }
 
-.regbtn:hover ,.theback button:hover{
-    background-color: #ab8915; 
-} */
+
+
 
 
 /* About Section */
@@ -968,7 +965,8 @@ body{
 }
 
 .prizeimgs p{
-    font-family: "Acme", serif;
+    /* font-family: "Acme", serif; */
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #e5d6d6;
@@ -997,13 +995,15 @@ body{
 .faq-question:hover {
     background-color: #64614a; /* Slight background change on hover */
 }
-
+.faq{
+    margin: 0px 148px;
+}
 /* Footer Section */
 .footerpage {
     animation: fadeIn 2s ease-in;
 }
 .footerpage h2,.footerpage p{
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #e5d6d6;
@@ -1014,7 +1014,7 @@ body{
     transition: all 0.3s ease-in-out;
 } */
 .line h2 ,.line p{
-    font-family: "Acme", serif;
+    font-family: math;
   font-weight: 200;
   font-style: normal;
   color: #745a10;
@@ -1078,6 +1078,10 @@ body{
 .contact h2{
     font-size: 40px;
 }
+
+
+
+
 @media only screen and (max-width: 600px){
     .header{
         height: 60px;
@@ -1104,36 +1108,54 @@ body{
         grid-auto-flow: row;
         display: none;
     }
+    .clg{
+        margin-right: 66px;
+        margin-left: 36px;
+    }
+    .clg img {
+        width: 52px;
+    } 
+    .clg h1{
+        font-size: 16px;
+        padding-right: 0px;
+    }
     .regbtn{
-        font-size: 10px;
-        padding: 8px 10px;
-        margin-right: 0px;
+        margin-right:0px;
+        margin-left: 19px;
+        font-size: 14px;
     }
     .datetime{
-        display: unset;
+        width: 336px;
+        margin-left: 22px;
     }
     .count{
         margin-right: 0px;
-        padding-top: 21px;
+        padding-top:0px;
     }
     .count h5, .count p{
         font-size: 20px;
     }
     .countdown {
-        margin-top: 29px;
+        margin-top: 19px;
         padding: 0px 47px;
     }
+    .countdown div {
+        width: 56px;
+    }
     .countdown div p {
-        font-size: 35px;
+        font-size: 23px;
     }
     .countdown div span {
-        font-size: 18px;
+        font-size: 14px;
     }
     .aboutpage{
         height: unset;
     }
     .abouthead{
         font-size: 40px;
+    }
+    .aboutpara{
+        padding: 16px 56px 0px;
     }
     .aboutpara p {
         font-size: 14px;
@@ -1189,6 +1211,9 @@ body{
     .faqpage h1{
         font-size: 23px;
         padding: 98px 20px 33px;
+    }
+    .faq{
+        margin: unset;
     }
     .guid{
         height: 204px;
