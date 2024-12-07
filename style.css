@@ -1116,17 +1116,18 @@ body{
         width: 52px;
     } 
     .clg h1{
-        font-size: 16px;
+        font-size: 13px;
         padding-right: 0px;
     }
     .regbtn{
         margin-right:0px;
-        margin-left: 19px;
-        font-size: 14px;
+        /* margin-left: 19px; */
+        font-size: 12px;
     }
     .datetime{
-        width: 336px;
-        margin-left: 22px;
+        width: 278px;
+        margin: 25px;
+        font-size: 30px;
     }
     .count{
         margin-right: 0px;
@@ -1140,13 +1141,13 @@ body{
         padding: 0px 47px;
     }
     .countdown div {
-        width: 56px;
+        width: 41px;
     }
     .countdown div p {
-        font-size: 23px;
+        font-size: 18px;
     }
     .countdown div span {
-        font-size: 14px;
+        font-size: 12px;
     }
     .aboutpage{
         height: unset;
@@ -1155,7 +1156,7 @@ body{
         font-size: 40px;
     }
     .aboutpara{
-        padding: 16px 56px 0px;
+        padding: 16px 31px 0px;
     }
     .aboutpara p {
         font-size: 14px;
