@@ -1186,6 +1186,10 @@ body{
     .domain1 h2 {
         font-size: 17px;
     }
+    .theback{
+        width: 217px;
+        height: 257px;
+    }
     .theback p{
         font-size: 14px;
     }
