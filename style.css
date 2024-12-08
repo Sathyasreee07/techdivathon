@@ -96,7 +96,7 @@ body{
     margin-top: 40px;
     padding: 21px;
     border: solid;
-    margin-left: 235px;
+    margin-left: 190px;
     width: 541px;
     border-radius: 27px;
     
@@ -140,8 +140,8 @@ body{
 }
 
 .homepage{ 
-    height: 80vh;
-    padding: 80px 52px 0px;
+    /* height: 80vh; */
+    padding: 80px 52px 50px;
     background-image: url(img/hback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,7 +288,7 @@ body{
     background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
     border-image: fill 0 linear-gradient(#0003, #000);
     
@@ -327,7 +327,7 @@ body{
     background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .para{
     display: grid;
@@ -457,7 +457,7 @@ body{
     background-image: url('img/homeright.jpg');
      background-size: cover;
      background-position: center;
-     height: 100vh;
+     /* height: 100vh; */
     padding: 0px 10px;
     height: 690px;
     
@@ -665,12 +665,12 @@ body{
 }
 /*timeline*/
 .timelinepage{
-    height: 618px;
+    /* height: 618px; */
     padding: 46px 62px;
     background-image: url('img/homeright.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+     
    
 
 }
@@ -975,10 +975,7 @@ body{
 }
 
 /* Timeline Section */
-/* .timelinepage h1 {
-    animation: fadeIn 2s ease-out;
-    
-} */
+
 
 .timeup div, .timedown div {
     animation: slideIn 2.5s ease-out;
@@ -994,7 +991,7 @@ body{
 }
 
 .faq-question:hover {
-    background-color: #64614a; /* Slight background change on hover */
+    background-color: #64614a; 
 }
 .faq{
     margin: 0px 148px;
@@ -1176,42 +1173,77 @@ body{
     font-size: 21px;
 }
 
+/* font animation */
 
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  /* height: 100%; */
+  align-items: center;
+  
 }
 
-/* @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-} */
-
-@keyframes reveal {
-    /* 0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:755px;} */
-    /* 80% {opacity:1;}
-    100% {opacity:0;width:355px;} */
-    0% {opacity:0;width:0px;}
-    50% {opacity:1;width:0px;}
-    100% {width:755px;}
+.container svg {
+    display: block;
+    /* width: 196px; */
+    /* height: 300px; */
+    margin: 0 auto;
+        margin-top: -164px;
+}
+#s-text text{
+    font: 130px 'Montserrat';
+}
+#s-textD text{
+    font: 118px 'Montserrat';
+}
+#s-textG text{
+    font: 100px 'Montserrat';
+}
+#s-textT text{
+    font: 118px 'Montserrat';
+}
+#s-textP text{
+    font: 110px 'Montserrat';
+}
+#s-textF text{
+    font: 72px 'Montserrat';
+}
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
 }
 
-
-.clglogo img{
-    width:99px;
+.text-copy:nth-child(1){
+  stroke: #eba71f;
+  animation-delay: -1;
 }
-.clgcontainer h1{
-    color: #daa520;
-    font-size: 39px;
-    align-content: center;
-    padding-right: 119px;
-    font-family: Zaptron;
+
+.text-copy:nth-child(2){
+  stroke: #eba71f;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #eba71f;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #eba71f;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #e5bf35;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
 @media only screen and (max-width: 600px){
     .header{
@@ -1257,8 +1289,9 @@ body{
     }
     .datetime{
         width: 278px;
-        margin: 25px;
+        margin: 20px 0px 0px;
         font-size: 30px;
+        justify-self: center;
     }
     .count{
         margin-right: 0px;
@@ -1402,24 +1435,29 @@ body{
     }
     .dot1 {
         margin-top: 62px;
-        margin-left: 151px;
+        margin-left: 0px;
+        justify-self: center;
     }
 
     .dot2{
         margin-top: 173px;
-        margin-left: 151px;
+        margin-left: 0px;
+        justify-self: center;
     }
     .dot3{
         margin-top: 295px;
-        margin-left: 151px;
+        margin-left: 0px;
+        justify-self: center;
     }
     .dot4{
         margin-top: 416px;
-        margin-left: 151px;
+        margin-left: 0px;
+        justify-self: center;
     }
     .dot5{
         margin-top: 530px;
-        margin-left: 151px;
+        margin-left: 0px;
+        justify-self: center;
     }
     .emptyline {
         margin-left: 0px; 
@@ -1553,62 +1591,32 @@ body{
         margin: 50px 0px;
     }
 
-
+    .container svg {
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
+    #s-text text{
+    font: 160px 'Montserrat';
+    }
+    #s-textD text{
+    font: 138px 'Montserrat';
+    }
+    #s-textG text{
+    font: 160px 'Montserrat';
+    padding-bottom: 20px;
+    }
+    #s-textT text{
+    font: 148px 'Montserrat';
+    }
+    #s-textP text{
+    font: 160px 'Montserrat';
+    }
+    #s-textF text{
+    font: 85px 'Montserrat';
+    }
 }
     
 
-.container {
-  display: flex;
-/*   border:1px solid red; */
-  /* height: 100%; */
-  align-items: center;
-}
-
-svg {
-    display: block;
-        font: 4.5em 'Montserrat';
-    /* width: 196px; */
-    /* height: 300px; */
-    margin: 0 auto;
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-  stroke: #eba71f;
-  animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-  stroke: #eba71f;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-  stroke: #eba71f;
-  animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-  stroke: #eba71f;
-  animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-  stroke: #e5bf35;
-  animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -35%;}
-}
 
 
 
