@@ -22,31 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-  // date&time
-//   const eventDate = new Date(new Date().getFullYear(), 9, 20).getTime(); // October is month 9 in JavaScript (0-based indexing)
 
-// function updateCountdown() {
-//     const now = new Date().getTime();
-//     const timeLeft = eventDate - now;
-
-//     if (timeLeft > 0) {
-//         // Calculate time left
-//         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-//         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-//         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-//         // Display the result
-//         document.getElementById("timeLeft").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-//     } else {
-//         // If the event date has passed
-//         document.getElementById("timeLeft").innerHTML = "The event has started!";
-//     }
-// }
-
-// // Update countdown every 1 second
-// setInterval(updateCountdown, 1000);
 var countDownDate = new Date("Feb 3,2025 00:00:00:00").getTime();
 var x=setInterval(function(){
   var now = new Date().getTime();
@@ -82,3 +58,32 @@ let scrollContainer=document.querySelector(".domains");
 function toggleMenu() {
   document.getElementById("myTopnav").classList.toggle("active");
 }
+// guidlines
+$.fn.commentCards = function () {
+  return this.each(function () {
+    var $this = $(this),
+      $cards = $this.find(".card"),
+      $current = $cards.filter(".card--current"),
+      $next;
+
+    $cards.on("click", function () {
+      if (!$current.is(this)) {
+        $cards.removeClass("card--current card--out card--next");
+        $current.addClass("card--out");
+        $current = $(this).addClass("card--current");
+        $next = $current.next();
+        $next = $next.length ? $next : $cards.first();
+        $next.addClass("card--next");
+      }
+    });
+
+    if (!$current.length) {
+      $current = $cards.last();
+      $cards.first().trigger("click");
+    }
+
+    $this.addClass("cards--active");
+  });
+};
+
+$(".cards").commentCards();
