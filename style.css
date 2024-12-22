@@ -96,7 +96,7 @@ body{
     margin-top: 40px;
     padding: 21px;
     border: solid;
-    margin-left: 236px;
+    justify-self: center;
     width: 541px;
     border-radius: 27px;
     font-family:'Times New Roman', Times, serif;
@@ -138,6 +138,9 @@ body{
 
 .homepage{ 
     /* height: 80vh; */
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: center;
     padding: 80px 52px 50px;
     background-image: url(img/hback.jpg);
     background-repeat: no-repeat;
@@ -145,6 +148,8 @@ body{
     background-position-y: 5px;
     text-align: center;  
 }
+
+
 /* collage name */
 .clg img{
     width:99px;
@@ -153,14 +158,15 @@ body{
     color: #daa520;
     font-size: 39px;
     align-content: center;
-    padding-right: 251px;
+    /* padding-right: 251px; */
     font-family: Zaptron;
 }
 .clg{
     display: grid;
     grid-auto-flow: column;
-    margin-right: 270px;
-    margin-left: 49px;
+    justify-content: center;
+    /* margin-right: 270px;
+    margin-left: 49px; */
 }
 #D{
     margin: 0px -19px;
@@ -205,7 +211,7 @@ body{
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 31px;
-  margin-right: 367px;
+  /* margin-right: 367px; */
 }
 
 .regbtn:hover {
@@ -225,14 +231,14 @@ body{
 .title{
     font-size: 77px;
     font-weight: 400;   
-    margin-right: 359px; 
+    /* margin-right: 359px;  */
     
 }
 
 
 .subtitle{
     font-size: 32px;
-    margin-right: 367px;
+    /* margin-right: 367px; */
 } 
 
 
