@@ -425,6 +425,7 @@ body{
     margin-left: 13px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    font-family:'Times New Roman', Times, serif;
 }
 .domains::-webkit-scrollbar {
     display: none; /* Hide scrollbar in Chrome, Edge, and Safari */
