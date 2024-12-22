@@ -1297,6 +1297,7 @@ body{
         width: 67px;
     }
     .homepage {
+        display: contents;
         height: unset;
         padding: 40px 0px 0px;
     }
