@@ -5,6 +5,7 @@
 /* header */
 body{
     background: black;
+    font-family: math;
 }
 
 
@@ -14,7 +15,6 @@ body{
   font-weight: 200;
   font-style: normal;
 }
-
 
 @font-face {
     font-family: Zaptron;
@@ -96,7 +96,7 @@ body{
     margin-top: 40px;
     padding: 21px;
     border: solid;
-    margin-left: 190px;
+    margin-left: 236px;
     width: 541px;
     border-radius: 27px;
     
@@ -110,13 +110,10 @@ body{
     word-spacing: 4px;
 }
 .count{
-    
     padding-top: 11px;
-
 }
 /* home */
 .homepara h2, .homepara h3{
-    
     color: #b88746;
     font-family: Zaptron;
     color: transparent;
@@ -156,7 +153,7 @@ body{
     color: #daa520;
     font-size: 39px;
     align-content: center;
-    padding-right: 119px;
+    padding-right: 251px;
     font-family: Zaptron;
 }
 .clg{
@@ -165,7 +162,9 @@ body{
     margin-right: 270px;
     margin-left: 49px;
 }
-
+#D{
+    margin: 0px -19px;
+}
 .theback button{
     background-color: #daa520;
     border: none;
@@ -315,10 +314,9 @@ body{
 .aboutpara p{
     margin-top: 20px;
     font-family: math;
-
-  font-weight: 200;
-  font-style: normal;
-  color: #eccc97;
+    font-weight: 200;
+    font-style: normal;
+    color: #eccc97;
     word-spacing: 4px;
     display: flex;
     justify-content: space-between;
@@ -765,10 +763,21 @@ body{
 
 .emptyline{
     border: solid;
-    margin-left: 117px;
-    margin-right: 133px;
-    color:#daa520;
+    justify-self: center;
+    width: 100%;
+    max-width: 1120px;
+    color: #daa520;
+    position: absolute;
+    align-self: center;
 
+}
+.dotgrid{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    width: 1126px;
+    justify-self: center;
+    z-index: 1;
 }
 .dot1{
     background-color: #db2626;
@@ -776,9 +785,9 @@ body{
     width: 13px;
     border-radius: 73px;
     height: 13px;
-    position: absolute;
+    /* position: absolute;
     margin-top: 264px ;
-    margin-left:112px;
+    margin-left:112px; */
 }
 .dot2{
     background-color: #db2626;
@@ -786,9 +795,9 @@ body{
     width: 13px;
     border-radius: 73px;
     height: 13px;
-    position: absolute;
+    /* position: absolute;
     margin-top: 264px ;
-    margin-left: 403px;
+    margin-left: 403px; */
 }
 .dot3{
     background-color: #db2626;
@@ -796,9 +805,9 @@ body{
     width: 13px;
     border-radius: 73px;
     height: 13px;
-    position: absolute;
+    /* position: absolute;
     margin-top: 264px ;
-    margin-left: 684px;
+    margin-left: 684px; */
 }
 .dot4{
     background-color: #db2626;
@@ -806,9 +815,9 @@ body{
     width: 13px;
     border-radius: 73px;
     height: 13px;
-    position: absolute;
+    /* position: absolute;
     margin-top: 264px ;
-    margin-left: 963px;
+    margin-left: 963px; */
 }
 .dot5{
     background-color: #db2626;
@@ -816,15 +825,21 @@ body{
     width: 13px;
     border-radius: 73px;
     height: 13px;
-    position: absolute;
+    /* position: absolute;
     margin-top: 264px ;
-    margin-left: 1244px;
+    margin-left: 1244px; */
 }
 .timegrid h2, .timegrid p{
     text-align: center;
     color: #daa520;
     
 } 
+.timegrid h2{
+    font-size: 30px;
+}
+.timegrid p{
+    font-size: 24px;
+}
 
 /* faqs */
 .faqpage {
@@ -1094,7 +1109,7 @@ body{
   list-style-type: none;
   padding: 0;
   max-width: 34em;
-  margin: 10% auto 0;
+  margin: 3% auto 0;
 }
 .card {
   position: absolute;
@@ -1293,6 +1308,10 @@ body{
         font-size: 13px;
         padding-right: 0px;
     }
+    #D{
+        width: 14px;
+        margin: 0px -5px;
+    }
     .regbtn{
         margin-right:0px;
         /* margin-left: 19px; */
@@ -1430,8 +1449,15 @@ body{
     }
     .timegrid { 
         grid-auto-flow: column;
-        gap: 21px;
+        gap: 0px;
+        grid-template-columns: 40% 20% 40%;
     }
+    .timegrid h2{
+        font-size: 19px;
+    }
+    .timegrid p{
+    font-size: 15px;
+}
     .timeup {
         grid-auto-flow: row;
         gap: 100px;
@@ -1441,35 +1467,55 @@ body{
         align-items: center;
     }
     .timeup div , .timedown div{
-        width: 134px;
+        /* width: 134px; */
+        width: unset;
         height: 134px;
     }
-    .dot1 {
-        margin-top: 62px;
-        margin-left: 0px;
+    
+    .dotgrid{
+        display: grid;
+        width: unset;
         justify-self: center;
     }
-
-    .dot2{
-        margin-top: 173px;
-        margin-left: 0px;
-        justify-self: center;
-    }
-    .dot3{
-        margin-top: 295px;
-        margin-left: 0px;
-        justify-self: center;
-    }
-    .dot4{
-        margin-top: 416px;
-        margin-left: 0px;
-        justify-self: center;
-    }
-    .dot5{
-        margin-top: 530px;
-        margin-left: 0px;
-        justify-self: center;
-    }
+.dot1{
+    margin-top: 62px;
+    margin-left: 0px;
+    justify-self: center;
+    height: 13px;
+    position: absolute;
+    
+}
+.dot2{
+    margin-top: 173px;
+    margin-left: 0px;
+    justify-self: center;
+    height: 13px;
+    position: absolute;
+    
+}
+.dot3{
+    margin-top: 295px;
+    margin-left: 0px;
+    justify-self: center;
+    height: 13px;
+    position: absolute;
+    
+}
+.dot4{
+    margin-top: 416px;
+    margin-left: 0px;
+    justify-self: center;
+    height: 13px;
+    position: absolute;
+}
+.dot5{
+    margin-top: 530px;
+    margin-left: 0px;
+    justify-self: center;
+    height: 13px;
+    position: absolute;
+    
+}
     .emptyline {
         margin-left: 0px; 
         margin-right: 0px;
@@ -1478,6 +1524,7 @@ body{
         width: 0px;
         display: flex;
         justify-self: center;
+        height: 98%;
     }
     .regend{
         margin-top: 47px;
@@ -1517,14 +1564,17 @@ body{
         padding-left: 7px;
     }
     .foot {
-    padding-top: 6px;
-    padding-left: 7px;
+        padding-top: 6px;
+        padding-left: 0px;
+        justify-self: center;
     }
-    
+    #d{
+       width: 7px;
+    }
     .icons{
         display: grid;
         grid-auto-flow: column;
-        align-items: center;
+        justify-content: space-evenly;
     
     }
     .icons img {
@@ -1624,6 +1674,16 @@ body{
     }
     #s-textF text{
     font: 85px 'Montserrat';
+    }
+    /* guidlines card */
+    .card h2 {
+        font-size: 15px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+    .card {
+    padding: 23px 20px;
     }
 }
     
