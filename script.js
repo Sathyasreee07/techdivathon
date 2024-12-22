@@ -87,3 +87,4 @@ $.fn.commentCards = function () {
 };
 
 $(".cards").commentCards();
+
