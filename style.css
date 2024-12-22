@@ -320,12 +320,19 @@ body{
   
 /* guidelines */
  .guidlinepage{
-    padding: 52px;    
-    background-color:white;
-    background-image: url('img/home1.jpg');
+    padding: 23px 0px 87px;  
+    /* background-color:black; */
+    /* background-image: url('img/home1.jpg'); */
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
+}
+#myVideo {
+    /* max-width: 1516px; */
+    max-width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
 }
 .para{
     display: grid;
@@ -966,7 +973,7 @@ body{
 .boxs-wrap {
     display: flex;
     align-items: center;
-    margin: 50px 0px;
+    margin: 50px 0px ;
 }
 /* Prize Section */
 
@@ -1098,7 +1105,7 @@ body{
   list-style-type: none;
   padding: 0;
   max-width: 34em;
-  margin: 3% auto 0;
+  margin: 1% auto 0;
 }
 .card {
   position: absolute;
@@ -1203,7 +1210,7 @@ body{
     /* width: 196px; */
     /* height: 300px; */
     margin: 0 auto;
-        margin-top: -164px;
+    margin-top: -164px;
 }
 #s-text text{
     font: 130px 'Montserrat';
@@ -1513,7 +1520,7 @@ body{
         width: 0px;
         display: flex;
         justify-self: center;
-        height: 98%;
+        height: 459px;
     }
     .regend{
         margin-top: 47px;
@@ -1638,7 +1645,7 @@ body{
     .boxs-wrap {
         display: flex;
         align-items: center;
-        margin: 50px 0px;
+        margin: 50px 0px 0px;
     }
 
     .container svg {
@@ -1662,17 +1669,36 @@ body{
     font: 160px 'Montserrat';
     }
     #s-textF text{
-    font: 85px 'Montserrat';
+    font: 82px 'Montserrat';
     }
     /* guidlines card */
     .card h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .card p {
         font-size: 15px;
     }
     .card {
-    padding: 23px 20px;
+        padding: 27px 20px;
+    }
+
+    .cards{
+        max-width: 14em;
+    }
+    .card h2{
+    padding-bottom: 7px;
+    }
+    #myVideo{
+        display: none;
+    }
+    #mymobileVideo{
+        max-width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+    .guidlinepage {
+        padding: 23px 0px 41px;
     }
 }
     
