@@ -287,6 +287,7 @@ body{
     left: 0;
     object-fit: cover;
     z-index: -1;
+    opacity: 46%;
 } 
 #timevideo {
     position: absolute;
@@ -295,6 +296,7 @@ body{
     left: 0;
     object-fit: cover;
     z-index: -1;
+    opacity: 46%;    
 } 
 #prizevideo {
     position: absolute;
@@ -303,6 +305,7 @@ body{
     left: 0;
     object-fit: cover;
     z-index: -1;
+    opacity: 46%;    
 } 
 #faqvideo {
     position: absolute;
@@ -311,6 +314,7 @@ body{
     left: 0;
     object-fit: cover;
     z-index: -1;
+    opacity: 46%;
 } 
 .abouthead{
     text-align: center;
@@ -733,6 +737,9 @@ body{
     background-position: center; 
      
 } */
+ .timelinepage{
+    padding-top: 112px;
+ }
 .timegrid{
     display: grid;
     grid-auto-flow: row;
@@ -1268,23 +1275,24 @@ body{
     margin: 0 auto;
     margin-top: -164px;
 }
+
 #s-text text{
-    font: 130px 'Montserrat';
+    font: 130px 'Montserrat','Times New Roman', Times, serif;
 }
 #s-textD text{
-    font: 118px 'Montserrat';
+    font: 118px 'Montserrat','Times New Roman', Times, serif;
 }
 #s-textG text{
-    font: 100px 'Montserrat';
+    font: 100px 'Montserrat','Times New Roman', Times, serif;
 }
 #s-textT text{
-    font: 118px 'Montserrat';
+    font: 118px 'Montserrat','Times New Roman', Times, serif;
 }
 #s-textP text{
-    font: 110px 'Montserrat';
+    font: 110px 'Montserrat','Times New Roman', Times, serif;
 }
 #s-textF text{
-    font: 72px 'Montserrat';
+    font: 72px 'Montserrat','Times New Roman', Times, serif;
 }
 .text-copy {
     fill: none;
