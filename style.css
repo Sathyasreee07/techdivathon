@@ -102,6 +102,9 @@ body{
     font-family:'Times New Roman', Times, serif;
 }
 
+
+
+
 .datetime h5, .datetime p, .countdown span{
    font-family:'Times New Roman', Times, serif;
   font-weight: 200;
@@ -273,6 +276,39 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+#domainvideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+} 
+#timevideo {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+} 
+#prizevideo {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+} 
+#faqvideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
     object-fit: cover;
     z-index: -1;
 } 
@@ -297,8 +333,8 @@ body{
 
     display: grid;
     grid-auto-flow: column;
-    background: url('backvedio.mp4') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('backvedio.mp4') no-repeat center center fixed;
+    background-size: cover; */
     /* background-size: cover;
     background-position: center; */
     /* height: 100vh; */
@@ -425,7 +461,7 @@ body{
 .domains{
     display:grid;
     grid-auto-flow: column;
-    margin-left: 52px;
+    /* margin-left: 52px; */
     overflow-x: scroll;
     gap: 29px;
     margin-left: 13px;
@@ -477,9 +513,9 @@ body{
 }
 
 .domainpage{
-    background-image: url('img/homeright.jpg');
+    /* background-image: url('img/homeright.jpg');
      background-size: cover;
-     background-position: center;
+     background-position: center; */
      /* height: 100vh; */
     padding: 0px 10px;
     height: 690px;
@@ -630,13 +666,13 @@ body{
     word-spacing: 4px;
 }
 /* prize */
-.prizepage{
+/* .prizepage{
   
     background-image: url('img/home1.jpg');
     background-size: cover;
     background-position: center;
    
-}
+} */
 .prizepage h1{
     text-align: center;
     padding: 83px 20px 20px;
@@ -675,6 +711,7 @@ body{
     display: grid;
     justify-content: center;
 }
+
 .prize2{
     display: grid;
     grid-auto-flow: column;
@@ -688,20 +725,19 @@ body{
     justify-self: center;
 }
 /*timeline*/
-.timelinepage{
+/* .timelinepage{
     /* height: 618px; */
-    padding: 46px 62px;
-    background-image: url('img/homeright.jpg');
+    /* padding: 46px 62px; */
+    /*background-image: url('img/homeright.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; 
      
-   
-
-}
+} */
 .timegrid{
     display: grid;
     grid-auto-flow: row;
     gap: 30px;
+    padding: 0px 62px;
     
 }
 .timeup{
@@ -721,6 +757,7 @@ body{
   font-style: normal;
   color: #e5d6d6;
     word-spacing: 4px;
+    
 }
 .timeup div{
     width: 271px;
@@ -859,9 +896,9 @@ body{
 /* faqs */
 .faqpage {
         padding: 0px 52px;
-        background-image: url('img/homeright.jpg');
+        /* background-image: url('img/homeright.jpg');
         background-size: cover;
-        background-position: center;   
+        background-position: center;    */
 }
 
 .faqpage h1 {
@@ -1297,7 +1334,7 @@ body{
         width: 67px;
     }
     .homepage {
-        display: contents;
+        display: block;
         height: unset;
         padding: 40px 0px 0px;
     }
@@ -1379,8 +1416,7 @@ body{
     .domains {
         overflow-x: scroll;
         gap: 29px;
-      
-        margin-left: 13px;
+        margin-left: 0px;
     }
     .domainpage h1{
         font-size: 44px;
@@ -1395,14 +1431,14 @@ body{
         height: 176px;
     }
     .domain1 h2 {
-        font-size: 17px;
+        font-size: 24px;
     }
     .theback{
         width: 217px;
         height: 257px;
     }
     .theback p{
-        font-size: 14px;
+        font-size: 17px;
     }
     .thecard{
         width: 217px;
@@ -1467,13 +1503,18 @@ body{
         grid-auto-flow: column;
         gap: 0px;
         grid-template-columns: 40% 20% 40%;
+        padding: 0px 0px;
     }
     .timegrid h2{
         font-size: 19px;
     }
     .timegrid p{
     font-size: 15px;
-}
+    }
+    .timegif{
+        width: 42px;
+        height: 42px;
+    }
     .timeup {
         grid-auto-flow: row;
         gap: 100px;
@@ -1552,8 +1593,8 @@ body{
         font-size: 44px;
     }
     .prizeimgs img {
-        width: 136px;
-        height: 128px;
+        width: 113px;
+        height: 112px;
     }
     .prizepage p{
         padding: 10px;
@@ -1657,7 +1698,7 @@ body{
     }
     #backbtn,#nextbtn{
         display: block;
-        width: 50PX;
+        width: 39px;
         cursor: pointer;
         
     }
@@ -1719,6 +1760,18 @@ body{
     } */
     .guidlinepage {
         padding: 23px 0px 41px;
+    }
+    #aboutvideo {
+        height: 201%;
+    }
+    #domainvideo {
+        height: 270%;
+    }
+    #timevideo {
+        height: 200%;
+    }
+    #prizevideo {
+        height: 148%;
     }
 }
     
