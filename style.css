@@ -1473,8 +1473,21 @@ body{
     opacity: 1;
     height: 100%;
   }
-}
 
+  
+}
+.sponcerlogo{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponcerlogo img{
+    width: 137px;
+}
+#td{
+    width:27px;
+}
 @media only screen and (max-width: 600px){
     .header{
         height: 60px;
@@ -1521,6 +1534,7 @@ body{
         margin-right:0px;
         /* margin-left: 19px; */
         font-size: 12px;
+        margin-top: 16px;
     }
     .datetime{
         width: 278px;
@@ -1931,6 +1945,12 @@ body{
     .faq-answer {
       font-size: 11px;
       padding: 12px 13px 13px 22px;
+    }
+    .sponcerlogo img {
+       width: 56px;
+    }
+    #td{
+        width:14px;
     }
 
 }
