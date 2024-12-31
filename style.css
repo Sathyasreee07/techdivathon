@@ -1488,6 +1488,18 @@ body{
 #td{
     width:27px;
 }
+.dom_line{
+        text-align:center; 
+        color:#daa520;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .td{
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(195 4 86);
+}
 @media only screen and (max-width: 600px){
     .header{
         height: 60px;
@@ -1877,7 +1889,7 @@ body{
 
     .container svg {
         margin-top: 0px;
-        padding-bottom: 40px;
+        padding-bottom: 8px;
     }
     #s-text text{
     font: 160px 'Montserrat';
@@ -1951,6 +1963,9 @@ body{
     }
     #td{
         width:14px;
+    }
+    .dom_line{
+        font-size: 15px;
     }
 
 }
