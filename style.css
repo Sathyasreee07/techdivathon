@@ -1886,10 +1886,10 @@ body{
     }
     /* guidlines card */
     .card h2 {
-        font-size: 18px;
+        font-size: 13px;
     }
     .card p {
-        font-size: 15px;
+        font-size: 13px;
     }
     .card {
         padding: 27px 20px;
