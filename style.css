@@ -1928,6 +1928,11 @@ body{
     .unwanted{
         display: none;
     }
+    .faq-answer {
+      font-size: 11px;
+      padding: 12px 13px 13px 22px;
+    }
+
 }
     
 
