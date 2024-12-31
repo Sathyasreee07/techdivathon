@@ -1925,6 +1925,9 @@ body{
     #prizevideo {
         height: 148%;
     }
+    .unwanted{
+        display: none;
+    }
 }
     
 
