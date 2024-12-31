@@ -954,7 +954,7 @@ body{
     display: none;
     font-size: 20px;
     color: #555;
-    padding: 24px 15px;
+    padding: 24px 42px;
     background-color: #e1be61;
     border-radius: 5px;
     margin-top: 5px;
@@ -1251,7 +1251,7 @@ body{
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 .card h2{
-    padding-bottom: 23px;
+    padding-bottom: 10px;
     text-align: center;
 }
 .card p{
