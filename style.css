@@ -361,8 +361,8 @@ body{
     font-style: normal;
     color: #eccc97;
     word-spacing: 4px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 
 }
 .aboutimg img{
@@ -1587,7 +1587,7 @@ body{
     }
     .theback{
         width: 217px;
-        height: 257px;
+        height: 293px;
     }
     .theback p{
         font-size: 17px;
