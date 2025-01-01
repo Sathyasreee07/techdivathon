@@ -9,6 +9,7 @@ body{
 }
 
 
+
 .playfair-display-body {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -120,7 +121,7 @@ body{
     color: #b88746;
     font-family: Zaptron;
     color: transparent;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     animation-timeline: auto;
     animation-range-start: normal;
     animation-range-end: normal;
@@ -173,6 +174,7 @@ body{
 }
 #D{
     margin: 0px -19px;
+    width:61px;
 }
 .theback button{
     background-color: #daa520;
@@ -1486,7 +1488,7 @@ body{
     width: 137px;
 }
 #td{
-    width:27px;
+    width:35px;
 }
 .dom_line{
         text-align:center; 
@@ -1494,12 +1496,22 @@ body{
         font-size: 23px;
         font-family: 'Times New Roman', Times, serif;
     }
-    .td{
+.td{
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(195 4 86);
+    font-size: 27px;
 }
+.title .td{
+    font-size: 101px;
+    font-size: 107px;
+    color: rgb(147 37 84);
+    
+}
+
+
+
 @media only screen and (max-width: 600px){
     .header{
         height: 60px;
@@ -1539,8 +1551,9 @@ body{
         padding-right: 0px;
     }
     #D{
-        width: 14px;
+        width: 22px;
         margin: 0px -5px;
+        
     }
     .regbtn{
         margin-right:0px;
@@ -1966,6 +1979,14 @@ body{
     }
     .dom_line{
         font-size: 15px;
+    }
+    .td{
+        font-size: 14px;
+    }
+    .title .td {
+        
+        font-size: 36px;
+        
     }
 
 }
